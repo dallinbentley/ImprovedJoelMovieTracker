@@ -13,6 +13,8 @@
     <tbody>
         @foreach (var x in Model.movies)
         {
+            @if (x.Title != "Independence Day")
+            {
             <tr>
                 <td>@x.Category</td>
                 <td>@x.Title</td>
@@ -35,6 +37,7 @@
                     </div>
                 </td>
             </tr>
-        }
+                }
+            }
     </tbody>
 </table>
